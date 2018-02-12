@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Dialog"
+    title="Multi Field"
+    width="800"
+    xtype="dialog">
+    <items
+        jcr:primaryType="cq:Widget"
+        xtype="tabpanel">
+        <items jcr:primaryType="cq:WidgetCollection">
+            <tab1
+                jcr:primaryType="cq:Panel"
+                title="Add">
+                <items jcr:primaryType="cq:WidgetCollection">
+                    <heading
+                        jcr:primaryType="cq:Widget"
+                        anchor="100%"
+                        dname="heading"
+                        fieldLabel="Heading"
+                        layout="anchor"
+                        name="./heading"
+                        xtype="textfield"/>
+                    <stock
+                        jcr:primaryType="cq:Widget"
+                        hideLabel="false"
+                        name="./stock"
+                        title="Stock"
+                        xtype="multifield">
+                        <fieldConfig
+                            jcr:primaryType="cq:Widget"
+                            border="true"
+                            hideLabel="true"
+                            layout="form"
+                            xtype="custom-multifield">
+                            <items jcr:primaryType="cq:WidgetCollection">
+                                <header
+                                    jcr:primaryType="cq:Widget"
+                                    dName="header"
+                                    fieldLabel="Header"
+                                    width="600"
+                                    xtype="textfield"/>
+                                <leftalign
+                                    jcr:primaryType="cq:Widget"
+                                    dName="leftalign"
+                                    fieldDescription="Choose alignment"
+                                    fieldLabel="Left Align"
+                                    type="select"
+                                    xtype="selection">
+                                    <options jcr:primaryType="cq:WidgetCollection">
+                                        <style_0
+                                            jcr:primaryType="nt:unstructured"
+                                            text="Yes"
+                                            value="YES"/>
+                                        <style_1
+                                            jcr:primaryType="nt:unstructured"
+                                            text="No"
+                                            value="NO"/>
+                                    </options>
+                                </leftalign>
+                            </items>
+                        </fieldConfig>
+                    </stock>
+                </items>
+            </tab1>
+        </items>
+    </items>
+</jcr:root>
