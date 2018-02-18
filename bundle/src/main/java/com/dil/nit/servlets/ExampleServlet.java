@@ -47,6 +47,7 @@ public class ExampleServlet extends SlingAllMethodsServlet {
 		}
 		
 		response.getWriter().write(jsonMain.toString());
+		
 
 		
 		
