@@ -29,16 +29,16 @@ public class ExampleServlet extends SlingAllMethodsServlet {
 		JSONObject jsonMain = new JSONObject();
 		JSONArray arrayObj=new JSONArray();
 		try {
-			jsonobject.put("Name", "Nithya");
-			jsonobject.put("Phone", "6148228287");
+			jsonobject.put("Name", "Abc");
+			jsonobject.put("Phone", "123456789");
 			arrayObj.put(jsonobject);
 			jsonobject = new JSONObject();
-			jsonobject.put("Name", "Dileep");
-			jsonobject.put("Phone", "6362848459");
+			jsonobject.put("Name", "xyz");
+			jsonobject.put("Phone", "123654987");
 			arrayObj.put(jsonobject);
 			jsonobject = new JSONObject();
-			jsonobject.put("Name", "Dhanvi");
-			jsonobject.put("Phone", "6362848459");
+			jsonobject.put("Name", "jgh");
+			jsonobject.put("Phone", "147852369");
 			arrayObj.put(jsonobject);
 			jsonMain.put("Employee", arrayObj);
 		} catch (JSONException e) {
